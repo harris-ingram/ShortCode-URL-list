@@ -1,0 +1,18 @@
+@media screen and (max-width:576px){
+    table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+    thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+    td:before{
+       content: attr(data-title);
+       display: block;
+       font-weight: bold;
+    }
+    tbody th{
+        display: none;
+    }
+}
